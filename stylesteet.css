@@ -1,0 +1,72 @@
+* {
+    font-family: 'Lobster', cursive;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    margin-bottom: 95px;
+}
+.photo {
+    background-image: url('images1/pho.jpg');
+    background-size: cover;
+    width: 128px;
+    height: 128px;
+    border-radius: 40px;
+    margin-right: 18px;
+}
+.brief {
+    flex: 1;
+    max-width: 520px;
+}
+
+.brief h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: beige;
+}
+body {
+    margin-top: 100px;
+    overflow-y: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('https://images.unsplash.com/photo-1609150085819-06036683770e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    z-index: -2;
+}
+.menubar{
+
+    /*background: rgb(0, 255, 204);*/
+    width: 100%;
+        }
+
+  .menubar a{
+    display:inline; flex-direction: row;justify-content:space-between;
+    text-decoration: none;
+            }
+    .menubar a {
+      margin: 0.5%;padding: 1.5% ;background:lightblue;flex-grow: 1; text-align:center;
+
+                  }
+      .menubar a:hover{
+        background: rgb(153, 102, 255);
+        border-radius: 1.250em;
+
+                          }
+        .menubar  ul{
+          display:none;
+          position:absolute;
+           width:20%;
+                          }
+          .menubar a:hover ul{
+            display: block;
+            margin:0.031em 0 0 0 ;
+            background: rgb(0,255,204) ;
+            padding: 1%;
+
+            text-align: center;
+
+            }
