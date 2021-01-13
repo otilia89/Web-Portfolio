@@ -1,7 +1,6 @@
 * {
     font-family: 'Lobster', cursive;
 }
-
 .about {
     display: flex;
     align-items: center;
@@ -37,7 +36,20 @@ body {
     background-position: top;
     z-index: -2;
 }
+/*
+header h1{
+    font-size: 3.750em;
+    text-shadow: 0.313em 0.313em 0.313em rgb(236, 167, 167);
+    color: rgb(185, 247, 234);
+    position: relative;
+    text-align: center;
+    transition: transform 0.5s;
 
+ }
+    header h1:hover{
+     transform: scale(1.2);
+      }
+*/     
 .wrapper {
     padding: 0 195px;
     
@@ -51,36 +63,46 @@ body {
     position: relative;
 }        
 
-  .menubar ul{
-    display:flex;flex-direction: row;justify-content:space-between;
+.menubar ul{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
     text-decoration: none;  
     list-style:none;  
-            }
+}
+.menubar ul li{
+    margin: 0.25%;
+    padding: 0.5% ;
+    background:lightblue;
+    flex-grow: 1; 
+    text-align:center;
+    position: relative;
+    cursor: pointer;
+    border-radius: 1.250em;
+ }
+.menubar ul li:hover{
+    background: lightblue;
+    border-radius: 1.250em;
+}
+.menubar ul li:hover ul  {
+    opacity: 1;
+    visibility: visible;
+    border-radius: 1.250em;
+}
+.submenu{
+    transition:opacity .3s linear;
+    position:absolute;
+    width :100%;
+    opacity: 0;
+    visibility: hidden;
+    background:lightblue;
+    padding: 1%;
+    text-align: center;
+    top:100%;
+    left:0;
+    border-radius: 1.250em;
+}
 
-           
-    .menubar ul li{
-      margin: 0.25%;padding: 0.5% ;background:lightblue;flex-grow: 1; text-align:center;
-
-                  }
-      .menubar ul li:hover{
-        background: rgba(153, 102, 255);
-        border-radius: 1.250em;
-
-                          }
-        .menubar ul li ul  {
-          display:none;
-          position: relative;;
-           width:20%;
-                          }
-          .menubar ul li:hover ul li{
-            display: block;
-            margin:0.031em 0 0 0 ;
-            background: rgba(0,255,204,) ;
-            padding: 1%;
-
-            text-align: center;
-
-            }
 
 
 a{
@@ -95,16 +117,57 @@ a:hover{
     width: 1.25em;
     height: 0.8em;
     margin-right: 0.3em;
-    border-top: 0.4em solid #fff;
+    border-top: 0.2em solid #fff;
     border-bottom: 0.2em solid #fff;
 
 }
 .hamburger:before{
     content:"";
     position:absolute;
-    top:0.5em;
+    top:0.3em;
     left:0px;
     width: 100%;
     border-top: 0.2em solid #fff;
 
-}
+}                      
+
+
+
+/*contact page*/
+.vanila{
+
+    background: linear-gradient( to right, rgb(247, 235, 235), rgb(159, 159, 240), rgb(241, 215, 167), rgb(162, 226, 162) );
+    text-align: center;
+    margin: 10%;
+  }
+  
+  .container{
+    text-align: center;
+    padding:1%;
+    font-size: 1.250em;
+  
+    background-color: rgb(145, 230, 241);
+    border-radius: 0.375em;
+    margin-left: 10%;
+    margin-right: 10%;
+    opacity:0.5;
+  }
+  .container Input,textarea{
+  
+    font-size: 1.275em;
+    margin-bottom: 1.250em;
+  text-align: center;
+  
+  }
+  
+  
+  @media (max-width:75em){
+  
+.container  input,textarea,label{
+      width: 100%;
+      font-size: 1.250em;
+      flex-direction: column;
+    }
+.container {
+    font-size: 1.263em;
+}}
