@@ -1,6 +1,7 @@
 * {
-    font-family: 'Lobster', cursive;
+    font-family: 'Open Sans', sans-serif;
 }
+
 .mainwrapper{
     max-width: 1280px;
     width: 100%;
@@ -17,8 +18,35 @@
     width: 12%;
     height: 128px;
     border-radius: 40px;
+    margin-right: 18px;  
+}
+.dog {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+}
+.photo1 {
+    background-image: url('images1/png2.jpg');
+    background-size: cover;
+    width: 12%;
+    height: 128px;
+    border-radius: 40px;
     margin-right: 18px;
 }
+.first {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+}
+.photo3 {
+    background-image: url('images1/HTML_Blog-scaled.jpeg');
+    background-size: cover;
+    width: 12%;
+    height: 128px;
+    border-radius: 40px;
+    margin-right: 18px;
+}
+
 .brief {
     flex: 1;
     max-width: 520px;
@@ -35,7 +63,7 @@ body {
     overflow-y: hidden;
     height: 100vh;
     width: 100%;
-    background-image: url('https://images.unsplash.com/photo-1609150085819-06036683770e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max');
+    background-image: url('images1/33738.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -63,7 +91,7 @@ header h1{
 
     /*background: rgb(0, 255, 204);*/
     width: 70%;
-        }
+}
 .menubar >ul>li{
     position: relative;
 }        
@@ -74,16 +102,18 @@ header h1{
     justify-content:space-between;
     text-decoration: none;  
     list-style:none;  
+    opacity: 0.75%;
 }
 .menubar ul li{
     margin: 0.25%;
     padding: 0.5% ;
-    background:lightblue;
+    background:rgb(243, 243, 230);
     flex-grow: 1; 
     text-align:center;
     position: relative;
     cursor: pointer;
     border-radius: 1.250em;
+    opacity: 0.75%;
  }
 .menubar ul li:hover{
     
@@ -116,7 +146,7 @@ a{
     color:black
 }
 a:hover{
-    color: red;
+    color: lightblue;
 }
 .hamburger{
     position: relative;
@@ -126,7 +156,7 @@ a:hover{
     margin-right: 0.3em;
     border-top: 0.2em solid #fff;
     border-bottom: 0.2em solid #fff;
-    visibility: hidden;
+    display:none;
 
 }
 .hamburger:before{
@@ -137,7 +167,7 @@ a:hover{
     width: 100%;
     border-top: 0.2em solid #fff;
 
-}                      
+}                  
 
 
 
@@ -179,3 +209,20 @@ a:hover{
 .container {
     font-size: 1.263em;
 }}
+
+.media {
+    display: flex;
+    justify-content: center;
+}
+
+.media a {
+    padding: 10px;
+    text-decoration: none;
+    color:  rgb(44, 44, 36);
+    transition: color .2s ease-out;
+    margin-top: 9%;
+}
+
+.media a:hover {
+    color: rgb(44, 44, 36);
+}
