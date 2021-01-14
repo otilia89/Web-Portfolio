@@ -2,7 +2,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.mainwrapper{
+.main-wrapper{
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
@@ -216,4 +216,72 @@ a:hover{
 
 .media a:hover {
     color: rgb(44, 44, 36);
+}
+
+
+/* CV Page */
+.cv {
+    display: flex;
+
+}
+
+/* About part of the CV page */
+
+.cvMe {
+    display: flex;
+    align-items: center;
+    margin-bottom: 95px;
+    flex-direction: column;
+    max-width: 270px;
+    box-sizing: border-box;
+    margin-right: 50px;
+    text-align: center;
+}
+
+.cvMe h3 {
+    color: black;
+}
+
+/* Profile image form CV page */
+
+.cvImage {
+    background-image: url('images1/pho.jpg');
+    background-size: cover;
+    width: 128px;
+    height: 128px;
+    border-radius: 40px;
+}
+
+
+
+.cvMe span {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+
+/* CV data split on the page  */
+
+.cvInfo {
+    flex: 1;
+    display: flex;
+    align-self: flex-start;
+    flex-wrap: wrap;
+}
+
+.cvInfo > div {
+    width: 50%;
+    font-size: 12px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.cvInfo > div > ul {
+    list-style: none;
+    padding: 0 20px 0 10px;
+}
+.box{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+
 }
