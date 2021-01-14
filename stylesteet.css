@@ -1,6 +1,11 @@
 * {
     font-family: 'Lobster', cursive;
 }
+.mainwrapper{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
 .about {
     display: flex;
     align-items: center;
@@ -9,7 +14,7 @@
 .photo {
     background-image: url('images1/pho.jpg');
     background-size: cover;
-    width: 128px;
+    width: 12%;
     height: 128px;
     border-radius: 40px;
     margin-right: 18px;
@@ -29,7 +34,7 @@ body {
     margin-top: 100px;
     overflow-y: hidden;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-image: url('https://images.unsplash.com/photo-1609150085819-06036683770e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max');
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,13 +86,16 @@ header h1{
     border-radius: 1.250em;
  }
 .menubar ul li:hover{
-    background: lightblue;
+    
     border-radius: 1.250em;
 }
 .menubar ul li:hover ul  {
     opacity: 1;
     visibility: visible;
     border-radius: 1.250em;
+    display: inline-block;
+    
+    
 }
 .submenu{
     transition:opacity .3s linear;
@@ -95,7 +103,6 @@ header h1{
     width :100%;
     opacity: 0;
     visibility: hidden;
-    background:lightblue;
     padding: 1%;
     text-align: center;
     top:100%;
@@ -119,6 +126,7 @@ a:hover{
     margin-right: 0.3em;
     border-top: 0.2em solid #fff;
     border-bottom: 0.2em solid #fff;
+    visibility: hidden;
 
 }
 .hamburger:before{
