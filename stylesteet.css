@@ -2,29 +2,37 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.main-wrapper{
+html {
+    margin: 0;
+}
+
+.main-wrapper {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
 }
+
 .about {
     display: flex;
     align-items: center;
-    margin-bottom: 95px;
+    margin-bottom: 2%;
 }
+
 .photo {
     background-image: url('images1/pho.jpg');
     background-size: cover;
     width: 12%;
     height: 128px;
     border-radius: 40px;
-    margin-right: 18px;  
+    margin-right: 18px;
 }
+
 .dog {
     display: flex;
     align-items: center;
     margin-bottom: 2%;
 }
+
 .photo1 {
     background-image: url('images1/png2.jpg');
     background-size: cover;
@@ -33,11 +41,13 @@
     border-radius: 40px;
     margin-right: 18px;
 }
+
 .first {
     display: flex;
     align-items: center;
     margin-bottom: 2%;
 }
+
 .photo3 {
     background-image: url('images1/HTML_Blog-scaled.jpeg');
     background-size: cover;
@@ -58,10 +68,10 @@
     font-weight: 600;
     color: rgb(27, 27, 17);
 }
+
 body {
     margin-top: 100px;
-    overflow-y: hidden;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-image: url('images1/33738.jpg');
     background-repeat: no-repeat;
@@ -69,86 +79,81 @@ body {
     background-position: top;
     z-index: -2;
 }
-/*
-header h1{
-    font-size: 3.750em;
-    text-shadow: 0.313em 0.313em 0.313em rgb(236, 167, 167);
-    color: rgb(185, 247, 234);
-    position: relative;
-    text-align: center;
-    transition: transform 0.5s;
 
- }
-    header h1:hover{
-     transform: scale(1.2);
-      }
-*/     
+
 .wrapper {
     padding: 0 195px;
     
+
 }
-.menubar{
+
+.menubar {
 
     /*background: rgb(0, 255, 204);*/
     width: 70%;
 }
-.menubar >ul>li{
-    position: relative;
-}        
 
-.menubar ul{
-    display:flex;
-    flex-direction: row;
-    justify-content:space-between;
-    text-decoration: none;  
-    list-style:none;  
-    opacity: 0.75%;
+.menubar > ul > li {
+    position: relative;
 }
-.menubar ul li{
+
+.menubar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+
+.menubar ul li {
     margin: 0.25%;
-    padding: 0.5% ;
-    background:rgb(243, 243, 230);
-    flex-grow: 1; 
-    text-align:center;
+    padding: 0.5%;
+    background: rgb(243, 243, 230);
+    flex-grow: 1;
+    text-align: center;
     position: relative;
     cursor: pointer;
     border-radius: 1.250em;
-    opacity: 0.75%;
- }
-.menubar ul li:hover{
-    
+}
+
+.menubar ul li:hover {
+
     border-radius: 1.250em;
 }
-.menubar ul li:hover ul  {
+
+.menubar ul li:hover ul {
     opacity: 1;
     visibility: visible;
     border-radius: 1.250em;
     display: inline-block;
-    
-    
+
+
 }
-.submenu{
-    transition:opacity .3s linear;
-    position:absolute;
-    width :100%;
+
+.submenu {
+    transition: opacity .3s linear;
+    position: absolute;
+    width: 100%;
     opacity: 0;
     visibility: hidden;
     padding: 1%;
     text-align: center;
-    top:100%;
-    left:0;
+    top: 100%;
+    left: 0;
     border-radius: 1.250em;
 }
 
 
-
-a{
-    color:black
+a {
+    color: black
 }
-a:hover{
+
+a:hover {
     color: lightblue;
 }
-.hamburger{
+
+.hamburger {
     position: relative;
     display: inline-block;
     width: 1.25em;
@@ -156,62 +161,68 @@ a:hover{
     margin-right: 0.3em;
     border-top: 0.2em solid #fff;
     border-bottom: 0.2em solid #fff;
-    display:none;
+    
 
 }
-.hamburger:before{
-    content:"";
-    position:absolute;
-    top:0.3em;
-    left:0px;
+
+.hamburger:before {
+    content: "";
+    position: absolute;
+    top: 0.3em;
+    left: 0px;
     width: 100%;
     border-top: 0.2em solid #fff;
 
-}                  
+}
+
 /*contact page*/
-.container{
-    text-align: center;
+.container {
+    position: relative;
     font-size: 1.250em;
-  
-    background-color: rgb(241, 243, 229);
-    border-radius: 0.375em;
-    margin-left: 1%;
-    margin-right:1%;
-    list-style: none;
     
-  }
-  .container Input,textarea{
-  
+    
+
+}
+
+.container Input, textarea {
+
     font-size: 1.275em;
     margin-bottom: 1.250em;
-  text-align: center;
-  }
-  
-  
-  @media (max-width:45em){
-  
-.container  input,textarea,label{
-      width: 100%;
-      font-size: 1.250em;
-      flex-direction: column;
-      
-    }
-.container {
-    font-size: 1.263em;
-}}
+    
+}
 
+
+@media (max-width: 45em) {
+
+    .container input, textarea, label {
+        width: 100%;
+        font-size: 1.250em;
+        position: relative;
+
+    }
+
+    .container {
+        font-size: 1.263em;
+        
+    }
+}
 .media {
     display: flex;
-    justify-content: center;
-    margin-top: 2%;
+    justify-content: center;   
 }
+.media {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;}
 
 .media a {
     padding: 10px;
     text-decoration: none;
-    color:  rgb(44, 44, 36);
+    color: rgb(44, 44, 36);
     transition: color .2s ease-out;
-    
+
 }
 
 .media a:hover {
@@ -222,19 +233,19 @@ a:hover{
 /* CV Page */
 .cv {
     display: flex;
-
+    flex-direction: column;
+    align-items: center;
 }
 
 /* About part of the CV page */
 
 .cvMe {
-    display: flex;
+    display: block;
     align-items: center;
-    margin-bottom: 95px;
+    
     flex-direction: column;
     max-width: 270px;
     box-sizing: border-box;
-    margin-right: 50px;
     text-align: center;
 }
 
@@ -242,21 +253,20 @@ a:hover{
     color: black;
 }
 
-/* Profile image form CV page */
 
-.cvImage {
-    background-image: url('images1/pho.jpg');
-    background-size: cover;
-    width: 128px;
-    height: 128px;
-    border-radius: 40px;
+   /* Profile image form CV page */
+.img-wrapper{
+    width: 200px;
 }
 
-
+.img-wrapper img{
+    width: 100%;
+}
+    
 
 .cvMe span {
     font-size: 13px;
-    margin-top: 10px;
+    
 }
 
 
@@ -267,6 +277,7 @@ a:hover{
     display: flex;
     align-self: flex-start;
     flex-wrap: wrap;
+    
 }
 
 .cvInfo > div {
@@ -280,8 +291,14 @@ a:hover{
     list-style: none;
     padding: 0 20px 0 10px;
 }
-.box{
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
 
+
+p4{
+    display:block;
+    float: left;
+}
+p5{
+    display: block;
+    width: 250px;
+    float:right;
 }
